@@ -1,0 +1,49 @@
+body{
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  background-color:  #aeb6bf ;
+  height: 10vh;
+}
+.menu{
+  width: 1000px;
+  margin: 0 auto;
+}
+.logo{
+  float: left;
+}
+.logo h3{
+  color: white;
+}
+.menu button{
+  background-color: white;
+  color: black;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border: solid black;
+  text-align: right;
+}
+.right menu{
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.dropdown menu{
+  display: none;
+  position:absolute;
+  background-color: blue;
+  max-width: 150px;
+  z-index: 1;
+}
+.dropdown menu a:hover{
+  background-color: white;
+  color: black;
+}
+.right menu:hover .dropdown menu{
+  display: block;
+}
+.right menu:hover .menu button{
+  background-color: transparent;
+
+}
